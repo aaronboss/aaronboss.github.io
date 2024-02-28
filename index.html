@@ -7,15 +7,17 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
 </head>
 <script type="text/javascript">
-	(function(d, m){
-			var kommunicateSettings = 
-					{"appId":"15861cc363739b86460f20c51401b15e3","popupWidget":true,"automaticChatOpenOnNavigation":true};
-			var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-			s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-			var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-			window.kommunicate = m; m._globals = kommunicateSettings;
-	})(document, window.kommunicate || {});
-/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://dtn7rvxwwlhud.cloudfront.net/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '2dd9e59d-2bc2-492f-bc6c-fb63179761cf');
+  amazon_connect('styles', { iconType: 'CHAT_VOICE', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIakZhMVo2ZGZmSXpGSnpJS2lYakthYVBxMmJIU0ZPbnhET3AyalJDV1F3UWdHaHFVOHV0Z3J1cTYxdFphbm05Q2JtQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNU1BETXZXUUk1QnBJMnhiUkFnRVFnQ3RsaHBINnVQSnNjekpPOHh2UHloSWpwOFJMeHVlOTNmMEVUU1JzOGtTZWwyNWEwUmhHcWhHZjk5WjI6Om9GVkFYbmFoeDdOR1JTc0lMbmNVYlNyNzY5bDl3WXp0M2JJT3BQWlFWYnA3dnNuN2VNTkNpcTdZUXdrT2RVYjFTZTl1QmU4YmFPTENYT1RrV1RqVDhib3d1NG9oaE9FZGRxVVkyYzdFdUYvQy81QTdJVGExWUVvSTBucnFkWXFjZ3FsWURqVW9sSUdOdmFFN0l6ZVc2ZERoR1V5ekNQZz0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown' ]);
 </script>
 <body>
 	<div id="header">
@@ -165,3 +167,7 @@
 </iframe>
 </body>
 </html>
+
+phone systems
+cbts
+finnesse
